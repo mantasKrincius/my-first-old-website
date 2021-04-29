@@ -1,0 +1,535 @@
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+}
+html{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* PAGRINDINIAI NUSTATYMAI */
+
+/* sectionu konteineriu dydziai */
+section > .container {
+    padding: 20px 2% 20px 2%;
+}
+
+/* sectionu konteineriu spalva */
+.apiemus, .marsrutai, .kainos, .slider {
+    background-color: #e1f2f7;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}  
+
+.column {
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flx {
+    display: flex;
+}
+/* HEADERIS */ 
+
+.top-header {
+    background-color: #ef0d50;
+    position: fixed;
+    width: 100%;
+    display: block;
+    z-index: 2;
+}
+
+.top-header .container {
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigacija */
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.225rem;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.menu a:hover {
+    background-color: #666666;
+    border-radius: 5px;
+}
+
+.menu-toggle {
+	background:none;
+    color: #fff;
+	width:100%;
+	text-align:center;
+	padding:10px 0;
+}
+.menu-toggle a {
+	text-decoration:none;
+	color: #fff;
+}
+
+.menu-size {
+    font-size: 1rem;
+} 
+/* HERO */ 
+
+.hero {
+    background-image: url("../images/Screenshot_2020-08-12%20Apie%20mus.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 120px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 2.625rem;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 300;
+    margin-left: 125px;
+    margin-bottom: 65px;
+    margin-top: 50px;
+    
+}
+
+.hero a {
+    margin-left: 250px;
+    font-size: 1.225rem;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:15px;
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* APIE MUS */ 
+
+h2 {
+    color: #eb3a70;
+    font-size: 2rem;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.services li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.services li {
+    line-height: 1.5;
+}
+
+.aboutuspic img {
+    width: 100%;
+    padding: 10px;
+}
+
+.apiemus h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apiemus p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.apiemus .baidare {
+    justify-content: center;
+}
+
+/* MARSRUTAI */ 
+
+.marsrutai .zemelapis img {
+    width: 354px;
+    height: 458px;
+    margin: 0 auto;
+    border-style: double;   
+}
+
+.marsrutai .borderis {
+    border-style: double;
+     margin: 0 auto;
+}
+
+/* kainos */
+
+.kainos .fas {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    justify-content: center;
+}
+
+.fa-ship {
+    color: blue;
+}
+
+.fa-dolly {
+    color: green;
+}
+
+.fa-euro-sign {
+    color: brown;
+}
+
+.kainos .info {
+    border-radius: 50%;
+    background-color: #f9ccac;
+    margin: 10px;   
+    height: 240px;
+    width: 100%;
+}
+
+.kainos .info p {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 0.98rem;
+}
+
+.info:hover {
+    background-color: gold;
+}
+
+/* Galerija */ 
+
+.slider button {
+    margin-bottom: 5px;
+    
+    
+}
+
+
+{
+  "container": ".slide-container",
+  "items": 2,
+  "controlsContainer": "#customize-controls",
+  "navContainer": "#customize-thumbnails",
+  "navAsThumbnails": true,
+  "autoplay": true,
+  "autoplayTimeout": 1000,
+  "autoplayButton": "#customize-toggle",
+  "swipeAngle": false,
+  "speed": 400
+}
+
+.slider-container img{
+	display: block;
+	width: 100%;
+    height: 400px;
+    margin: 0 auto; /* paklausti Realio ar sitas budas geras */
+}
+
+/* Parasykite mums */
+
+.kontaktai {
+    background-color: #ffffff;
+}
+
+.kontaktai p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.kontaktai img {
+    margin: 0 auto;
+}
+
+.kontaktai a {
+    text-decoration: none;
+}
+
+.kontaktai a:hover {
+    color: #e0876a; 
+}
+
+form {
+    margin-left: 100px; /* pakeisti be px */ 
+}
+
+ input[type=text], input, textarea {
+    display: flex;
+    width: 265px;
+    height: 35px;
+    border: 1px solid #353541;
+    box-sizing: border-box;   
+    margin-bottom: 21px;
+}
+
+textarea {
+    height: 93px;
+}
+
+.kontaktai .siusti {
+    justify-content: center;
+}    
+ 
+/* footeris */
+
+footer {
+    background-color: #e5bace;
+    margin-bottom: 0;
+}
+
+.footer ul {
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li a {
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+.footer ul li a :hover {
+    color:#69d4d8;
+}
+
+.footer p {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+@media all and (min-width:1141px) {
+    .hide-desktop {
+    display: none;
+    }
+}
+
+@media all and (max-width:900px) {
+    .hide-mobile {
+        display: none;
+    }
+    
+    .mobile-col {
+        flex-direction: column;
+    }
+    
+    .menu li a {
+        padding: 0;
+    }
+    
+    .menu li {
+        margin: 1   px;
+    }
+    
+    .aboutuspic img {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    
+    .baidare img {
+        width: 90%; 
+    }
+    
+    .kainos .info {
+        height: 260px;
+        margin: 0 auto;        
+    }
+    
+    .kainos .info p {
+        font-size: 0.90rem; /* butu imanoma paziureti */
+    }
+    .mobile-row {
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width:768px) {
+    .aboutuspic img{
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .info p {
+        max-width: 220px;               
+    }
+    
+    form {
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width:640px) {
+           .mobile-col {
+        flex-direction: column;
+    }
+    .hero a {
+        margin: 0 auto;
+    }
+    
+    .hero p {
+        margin: 50px auto;
+    }
+    
+    
+    .aboutuspic img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .zemelapis {
+        margin-bottom: 5px;
+    }
+    
+    .kainos .fas {
+        margin-bottom: 5px;
+    }
+    
+    .kainos .info {
+        margin-bottom: 10px;
+    }
+    form {
+        margin: 0 auto;
+    }
+    
+    .column {
+        margin: 0 auto;
+    }
+} 
+
+@media all and (max-width:450px) {
+       .mobile-col {
+        flex-direction: column;
+    }
+    .hero a {
+        margin: 0 auto;
+    }
+    
+    .hero p {
+        margin: 50px auto;
+    }
+    
+    
+    .aboutuspic img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .zemelapis {
+        margin-bottom: 5px;
+    }
+    
+    .kainos .fas {
+        margin-bottom: 5px;
+    }
+    
+    .kainos .info {
+        margin-bottom: 10px;
+    }
+    form {
+        margin: 0 auto;
+    }
+    
+    .column {
+        margin: 0 auto;
+    }
+    
+}
+
+@media all and (max-width:300px) {
+       .mobile-col {
+        flex-direction: column;
+    }
+    .hero a {
+        margin: 0 auto;
+    }
+    
+    .hero p {
+        margin: 50px auto;
+    }
+    
+    
+    .aboutuspic img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .zemelapis {
+        margin-bottom: 5px;
+    }
+    
+    .kainos .fas {
+        margin-bottom: 5px;
+    }
+    
+    .kainos .info {
+        margin-bottom: 10px;
+    }
+    form {
+        margin: 0 auto;
+    }
+    
+    .column {
+        margin: 0 auto;
+    }
+    
+    iframe {
+        width: 280px;
+        margin: 0 auto;
+    }
+    
+    .small {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media all and (max-width:200px) {
+        iframe {
+        width: 180px;
+        margin: 0 auto;
+    }
+    
+    .small {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+}
+
+    
